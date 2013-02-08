@@ -1,0 +1,18 @@
+﻿{
+  "name": "ChengYu-Extension",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "ChengYu",
+  "content_scripts":[
+    {
+     "matches" : [    
+       "http://*.cy.5156edu.com/*" ,
+       "http://67.220.90.13/*",
+       "http://174.127.195.168/*"
+      ],    
+     "js": ["js/jquery-1.8.2.js","js/jquery-ui.js","js/contentscript.js","js/jquery-ui.css"],
+      "run_at" : "document_end",
+      "all_frames" : false
+    }
+  ]
+}
